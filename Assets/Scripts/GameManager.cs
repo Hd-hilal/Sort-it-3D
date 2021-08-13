@@ -24,10 +24,18 @@ public class GameManager : MonoBehaviour
     public List<GameObject> BallList1;
     public List<GameObject> BallList2;
     public List<GameObject> BallList3;
+    public List<GameObject> BallList4;
+    public List<GameObject> BallList5;
+    public List<GameObject> BallList6;
+    public List<GameObject> BallList7;
 
     public GameObject Tube1;
     public GameObject Tube2;
     public GameObject Tube3;
+    public GameObject Tube4;
+    public GameObject Tube5;
+    public GameObject Tube6;
+    public GameObject Tube7;
 
     public GameObject CurrentBall;
     public bool AnySelectedBall;
