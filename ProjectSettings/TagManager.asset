@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tube
+  - Mavi
+  - Kirmizi
+  - Sari
+  - Yesil
+  - Turuncu
   layers:
   - Default
   - TransparentFX

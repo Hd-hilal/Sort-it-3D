@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 8758008}
   m_Layer: 0
   m_Name: SphereK
-  m_TagString: Untagged
+  m_TagString: Kirmizi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,8 +229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8758007}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 1.22, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0.7, y: 1.6, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -325,8 +325,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49547344}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0.95, z: 0}
-  m_LocalScale: {x: 0.21, y: 0.4, z: 0.21}
+  m_LocalPosition: {x: 0.7, y: 1.15, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.6, z: 0.31}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 238347296}
   m_Layer: 0
   m_Name: SphereM
-  m_TagString: Untagged
+  m_TagString: Mavi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -437,8 +437,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238347294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 0.65, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 1.4, y: 0.7, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 299599811}
   m_Layer: 0
   m_Name: 'SphereK '
-  m_TagString: Untagged
+  m_TagString: Kirmizi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -549,8 +549,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299599810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 1.03, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0.7, y: 1.3, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -651,8 +651,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 16.5, z: 1}
-  m_Center: {x: 0, y: 8, z: 0}
+  m_Size: {x: 1, y: 25, z: 1}
+  m_Center: {x: 0, y: 12, z: 0}
 --- !u!23 &502567535
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -711,7 +711,7 @@ Transform:
   m_GameObject: {fileID: 502567533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.4, y: 0.53, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.05, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.05, z: 0.35}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -742,7 +742,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 556051943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1966540f8ece1e4e86b0806f958c3c8, type: 3}
+  m_Script: {fileID: 11500000, guid: fcb7bc9651e7c31439a593c40e0931c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &556051945
@@ -774,7 +774,7 @@ GameObject:
   - component: {fileID: 588673837}
   m_Layer: 0
   m_Name: 'SphereM '
-  m_TagString: Untagged
+  m_TagString: Mavi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,8 +865,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588673836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0.84, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0.7, y: 1, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 763531427}
   m_Layer: 0
   m_Name: 'SphereM '
-  m_TagString: Untagged
+  m_TagString: Mavi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1070,8 +1070,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763531426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 1.03, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 1.4, y: 1.3, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -1152,13 +1152,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.01745245, y: 0, z: 0, w: 0.99984777}
-  m_LocalPosition: {x: 0.5, y: 1.24, z: -3.8}
+  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 0.7, y: 5, z: -5.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 2, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &979503605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,8 +1189,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 16.5, z: 1}
-  m_Center: {x: 0, y: 8, z: 0}
+  m_Size: {x: 1, y: 25, z: 1}
+  m_Center: {x: 0, y: 12, z: 0}
 --- !u!23 &979503607
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1249,7 +1249,7 @@ Transform:
   m_GameObject: {fileID: 979503605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7, y: 0.53, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.05, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.05, z: 0.35}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 1007551719}
   m_Layer: 0
   m_Name: SphereK
-  m_TagString: Untagged
+  m_TagString: Kirmizi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1360,8 +1360,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007551718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 0.84, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 1.4, y: 1, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -1463,8 +1463,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 16.5, z: 1}
-  m_Center: {x: 0, y: 8, z: 0}
+  m_Size: {x: 1, y: 25, z: 1}
+  m_Center: {x: 0, y: 12, z: 0}
 --- !u!23 &1230033298
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1523,7 +1523,7 @@ Transform:
   m_GameObject: {fileID: 1230033296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.53, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.05, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.05, z: 0.35}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -1618,8 +1618,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564325352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 0.95, z: 0}
-  m_LocalScale: {x: 0.21, y: 0.4, z: 0.21}
+  m_LocalPosition: {x: 1.4, y: 1.15, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.6, z: 0.31}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -1714,8 +1714,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716353286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.95, z: 0}
-  m_LocalScale: {x: 0.21, y: 0.4, z: 0.21}
+  m_LocalPosition: {x: 0, y: 1.15, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.6, z: 0.31}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
@@ -1827,7 +1827,7 @@ Transform:
   m_GameObject: {fileID: 1808629500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.7, y: 0.25, z: 0}
-  m_LocalScale: {x: 2, y: 0.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1847,7 +1847,7 @@ GameObject:
   - component: {fileID: 1821189639}
   m_Layer: 0
   m_Name: SphereM
-  m_TagString: Untagged
+  m_TagString: Mavi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1938,8 +1938,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821189638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 1.22, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 1.4, y: 1.6, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -1959,7 +1959,7 @@ GameObject:
   - component: {fileID: 1830503560}
   m_Layer: 0
   m_Name: SphereK
-  m_TagString: Untagged
+  m_TagString: Kirmizi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2050,8 +2050,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830503559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7, y: 0.65, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0.7, y: 0.7, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
