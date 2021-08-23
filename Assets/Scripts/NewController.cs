@@ -8,8 +8,8 @@ public class NewController : MonoBehaviour
 {
     public Bitir[] item;
     int i, j, eleman;
-    GameObject ball, ball1,ball2,ball3,ball4;
-    bool clicked=true;
+    GameObject ball, ball1, ball2, ball3, ball4;
+    bool clicked = true;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -51,16 +51,67 @@ public class NewController : MonoBehaviour
                         else if (hit.transform.name == "Tube6") MoveToTubeBall("BallList6");
                         else if (hit.transform.name == "Tube7") MoveToTubeBall("BallList7");
                     }
+
+                    //Havada Herhangi bir top seçilmiþse kontrolü yap
+                    CheckBalls();
                 }
-                cont();
+
             }
         }
-        //cont();
+
     }
-    private void FixedUpdate()
+
+    void CheckBalls()
     {
-        //cont();
+        //Doðru Yapýlmýþ tüp sayýsý
+        int correctTubeCount = 0;
+
+        //Seçilen tüpte ilk topun tagý(Tüpte hepsi ayný renk olduðundan diðer tüpler ilkiyle ayný tagta olmalý)
+        string firstBallTagInListed = null;
+
+        for (int i = 0; i < item.Length; i++) //Tüplerde Dönüyor
+        {
+            if (item[i].listed.Count != 0) //Secilen tüpün içinde top var mý
+            {
+                if (item[i].listed.Count == 4) // Tüp 4 topla tamamen dolu mu
+                {
+                    for (int j = 0; j < item[i].listed.Count; j++) // Seçilen tüpteki toplara dönüyor
+                    {
+                        if (j == 0) //Ýlk topa mý bakýyoruz
+                        {
+                            firstBallTagInListed = item[i].listed[j].tag; // ilk topun tagýný tut
+
+                        }
+                        else 
+                        {
+                            if (item[i].listed[j].tag != firstBallTagInListed) break; //Diðer toplarýn tagý ilk topla ayný deðilse fonksiyondan çýk(break ile for yarýda kesilebilir)
+
+                        }
+
+                    }
+
+                    correctTubeCount++; // Tüm toplar ayný renkse doðru tüp sayýsýný artýr.
+                }
+                else
+                {
+                    break; // Tüpte 4 tane top yoksa fonksiyondan çýk.
+                }
+
+            }
+            else
+            {
+                correctTubeCount++; // Tüp boþsa doðru tüp kabul et
+            }
+
+        }
+
+        if (correctTubeCount == item.Length) // Tüm döngü bittiðinde doðru tüp sayýsý toplam tüp sayýsýna eþit mi 
+        {
+            Debug.Log("WIN");
+        }
     }
+
+
     private void cont()
     {
         int sayac = 0;
@@ -69,66 +120,66 @@ public class NewController : MonoBehaviour
         //{
         //    if (clicked)
         //    {
-                    //for{ i = 1; i < 5 ;i++ }
-                    //   {
-            //            for (j = 1; j < 4; j++)
-            //            {
-            //                ball = item[0].listed[0];
-            //                ball1 = item[1].listed[j];
+        //for{ i = 1; i < 5 ;i++ }
+        //   {
+        //            for (j = 1; j < 4; j++)
+        //            {
+        //                ball = item[0].listed[0];
+        //                ball1 = item[1].listed[j];
 
-            //            print(item[2].listed[0]);
-            //                if (ball.tag == item[0].listed[j].tag && ball1.tag == item[1].listed[j].tag  && ball2.tag == item[2].listed[j].tag && ball3.tag == item[3].listed[j].tag && ball4.tag == item[4].listed[j].tag)
-            //                {
-            //                    sayac++;
-            //                    print("sükür");
-            //                    print(sayac);
-            //                }
-            //                else
-            //                {
-            //                    print("dogru degil");
-            //                     clicked = false;
-            //                    sayac = 0;
-            //                }
-            //                print("tamam");
-            //            }
-            //        clicked = true;
-            //    }
-            //}
+        //            print(item[2].listed[0]);
+        //                if (ball.tag == item[0].listed[j].tag && ball1.tag == item[1].listed[j].tag  && ball2.tag == item[2].listed[j].tag && ball3.tag == item[3].listed[j].tag && ball4.tag == item[4].listed[j].tag)
+        //                {
+        //                    sayac++;
+        //                    print("sükür");
+        //                    print(sayac);
+        //                }
+        //                else
+        //                {
+        //                    print("dogru degil");
+        //                     clicked = false;
+        //                    sayac = 0;
+        //                }
+        //                print("tamam");
+        //            }
+        //        clicked = true;
+        //    }
+        //}
         //}
 
 
 
-            if (eleman == 5)
+        if (eleman == 5)
+        {
+            for (j = 1; j < 4; j++)
             {
-                for (j = 1; j < 4; j++)
-                {     
-                    if (item[0].listed[0].tag == item[0].listed[j].tag)
-                    {
-                        print("girdi");
-                        sayac++;
-                    }
-                    else
-                    {
-                        sayac = 0;
-                        j = 1;
-                    }
-
-                    if (sayac == 3)
-                    {
-                        print("oldu");
-                    }
-                    else
-                    {
-                        print("olmadi");
-                    }
-                    print(sayac);
+                if (item[0].listed[0].tag == item[0].listed[j].tag)
+                {
+                    print("girdi");
+                    sayac++;
                 }
-            print("bitti");
+                else
+                {
+                    sayac = 0;
+                    j = 1;
+                }
+
+                if (sayac == 3)
+                {
+                    print("oldu");
+                }
+                else
+                {
+                    print("olmadi");
+                }
+                print(sayac);
             }
+            print("bitti");
         }
-    
-//TOP SEÇÝLÝYOR
-void SelectBall(string listName)
+    }
+
+    //TOP SEÇÝLÝYOR
+    void SelectBall(string listName)
     {
         if (listName == "BallList1") // eðer seçilen birinci listeyse 
         {
@@ -499,5 +550,5 @@ void SelectBall(string listName)
     {
         yield return new WaitForSecondsRealtime(0.2f);
     }
-    
+
 }
