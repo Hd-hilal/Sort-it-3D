@@ -9,7 +9,7 @@ public class NewController : MonoBehaviour
     public Bitir[] item;
     public GameObject button;
     public Text level;
-    int scene,artis;
+    int scene,artis,artan;
 
     private void Start()
     {
@@ -20,8 +20,9 @@ public class NewController : MonoBehaviour
         artis++;
         if (artis >= 5)
         {
-            level.text = ("Level " + artis);
-            artis++;
+            artan = artis;
+            level.text = ("Level " + artan);
+            artan++;
         }
         else
         {
