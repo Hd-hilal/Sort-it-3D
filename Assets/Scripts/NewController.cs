@@ -1,15 +1,36 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NewController : MonoBehaviour
 {
     public Bitir[] item;
-    int i, j, eleman;
-    GameObject ball, ball1, ball2, ball3, ball4;
-    bool clicked = true;
+    public GameObject button;
+    public Text level;
+    int scene,artis;
+
+    private void Start()
+    {
+        button.SetActive(false);
+        scene = SceneManager.GetActiveScene().buildIndex;
+        scene++;
+        artis = SceneManager.GetActiveScene().buildIndex;
+        artis++;
+        if (artis >= 5)
+        {
+            level.text = ("Level " + artis);
+            artis++;
+        }
+        else
+        {
+            level.text = ("Level " + artis);
+        }
+        PlayerPrefs.SetInt("Scene", scene);
+        Debug.Log(PlayerPrefs.GetInt("Scene"));
+
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -58,7 +79,6 @@ public class NewController : MonoBehaviour
 
             }
         }
-
     }
 
     void CheckBalls()
@@ -107,76 +127,82 @@ public class NewController : MonoBehaviour
 
         if (correctTubeCount == item.Length) // Tüm döngü bittiðinde doðru tüp sayýsý toplam tüp sayýsýna eþit mi 
         {
+            artis++;
             Debug.Log("WIN");
+            button.SetActive(true);
         }
     }
 
-
-    private void cont()
+    public void degistir(int sahneid)
     {
-        int sayac = 0;
-        eleman = item.Length;
-        //if (eleman == 5)
-        //{
-        //    if (clicked)
-        //    {
-        //for{ i = 1; i < 5 ;i++ }
-        //   {
-        //            for (j = 1; j < 4; j++)
-        //            {
-        //                ball = item[0].listed[0];
-        //                ball1 = item[1].listed[j];
-
-        //            print(item[2].listed[0]);
-        //                if (ball.tag == item[0].listed[j].tag && ball1.tag == item[1].listed[j].tag  && ball2.tag == item[2].listed[j].tag && ball3.tag == item[3].listed[j].tag && ball4.tag == item[4].listed[j].tag)
-        //                {
-        //                    sayac++;
-        //                    print("sükür");
-        //                    print(sayac);
-        //                }
-        //                else
-        //                {
-        //                    print("dogru degil");
-        //                     clicked = false;
-        //                    sayac = 0;
-        //                }
-        //                print("tamam");
-        //            }
-        //        clicked = true;
-        //    }
-        //}
-        //}
-
-
-
-        if (eleman == 5)
-        {
-            for (j = 1; j < 4; j++)
-            {
-                if (item[0].listed[0].tag == item[0].listed[j].tag)
-                {
-                    print("girdi");
-                    sayac++;
-                }
-                else
-                {
-                    sayac = 0;
-                    j = 1;
-                }
-
-                if (sayac == 3)
-                {
-                    print("oldu");
-                }
-                else
-                {
-                    print("olmadi");
-                }
-                print(sayac);
-            }
-            print("bitti");
-        }
+        SceneManager.LoadScene(sahneid);
     }
+
+    //private void cont()
+    //{
+    // int sayac = 0;
+    //eleman = item.Length;
+    //if (eleman == 5)
+    //{
+    //    if (clicked)
+    //    {
+    //for{ i = 1; i < 5 ;i++ }
+    //   {
+    //            for (j = 1; j < 4; j++)
+    //            {
+    //                ball = item[0].listed[0];
+    //                ball1 = item[1].listed[j];
+
+    //            print(item[2].listed[0]);
+    //                if (ball.tag == item[0].listed[j].tag && ball1.tag == item[1].listed[j].tag  && ball2.tag == item[2].listed[j].tag && ball3.tag == item[3].listed[j].tag && ball4.tag == item[4].listed[j].tag)
+    //                {
+    //                    sayac++;
+    //                    print("sükür");
+    //                    print(sayac);
+    //                }
+    //                else
+    //                {
+    //                    print("dogru degil");
+    //                     clicked = false;
+    //                    sayac = 0;
+    //                }
+    //                print("tamam");
+    //            }
+    //        clicked = true;
+    //    }
+    //}
+    //}
+
+
+
+    //    if (eleman == 5)
+    //    {
+    //        for (j = 1; j < 4; j++)
+    //        {
+    //            if (item[0].listed[0].tag == item[0].listed[j].tag)
+    //            {
+    //                print("girdi");
+    //                sayac++;
+    //            }
+    //            else
+    //            {
+    //                sayac = 0;
+    //                j = 1;
+    //            }
+
+    //            if (sayac == 3)
+    //            {
+    //                print("oldu");
+    //            }
+    //            else
+    //            {
+    //                print("olmadi");
+    //            }
+    //            print(sayac);
+    //        }
+    //        print("bitti");
+    //    }
+    //}
 
     //TOP SEÇÝLÝYOR
     void SelectBall(string listName)
